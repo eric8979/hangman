@@ -43,6 +43,7 @@ const App = () => {
 
     window.addEventListener('keydown', handleKeydown);
 
+    // clean up last useEffect
     return () => window.removeEventListener('keydown', handleKeydown);
   }, [wrongLetters, correctLetters, playable]);
 
